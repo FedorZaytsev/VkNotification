@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA40FEA71940530000C1F6BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA40FEA61940530000C1F6BB /* Cocoa.framework */; };
+		BA40FEB11940530000C1F6BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA40FEAF1940530000C1F6BB /* InfoPlist.strings */; };
+		BA40FEB31940530000C1F6BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40FEB21940530000C1F6BB /* main.m */; };
+		BA40FEB71940530000C1F6BB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BA40FEB51940530000C1F6BB /* Credits.rtf */; };
+		BA40FEBA1940530000C1F6BB /* VKNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40FEB91940530000C1F6BB /* VKNAppDelegate.m */; };
+		BA40FEBD1940530000C1F6BB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA40FEBB1940530000C1F6BB /* MainMenu.xib */; };
+		BA40FEBF1940530000C1F6BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA40FEBE1940530000C1F6BB /* Images.xcassets */; };
+		BA40FEC61940530000C1F6BB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA40FEC51940530000C1F6BB /* XCTest.framework */; };
+		BA40FEC71940530000C1F6BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA40FEA61940530000C1F6BB /* Cocoa.framework */; };
+		BA40FECF1940530000C1F6BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA40FECD1940530000C1F6BB /* InfoPlist.strings */; };
+		BA40FED11940530000C1F6BB /* VkNoticationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40FED01940530000C1F6BB /* VkNoticationTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA40FEC81940530000C1F6BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA40FE9B1940530000C1F6BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA40FEA21940530000C1F6BB;
+			remoteInfo = VkNotication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA40FEA31940530000C1F6BB /* VkNotication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkNotication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA40FEA61940530000C1F6BB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BA40FEA91940530000C1F6BB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BA40FEAA1940530000C1F6BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BA40FEAB1940530000C1F6BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BA40FEAE1940530000C1F6BB /* VkNotication-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VkNotication-Info.plist"; sourceTree = "<group>"; };
+		BA40FEB01940530000C1F6BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA40FEB21940530000C1F6BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA40FEB41940530000C1F6BB /* VkNotication-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VkNotication-Prefix.pch"; sourceTree = "<group>"; };
+		BA40FEB61940530000C1F6BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BA40FEB81940530000C1F6BB /* VKNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKNAppDelegate.h; sourceTree = "<group>"; };
+		BA40FEB91940530000C1F6BB /* VKNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKNAppDelegate.m; sourceTree = "<group>"; };
+		BA40FEBC1940530000C1F6BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BA40FEBE1940530000C1F6BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BA40FEC41940530000C1F6BB /* VkNoticationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkNoticationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA40FEC51940530000C1F6BB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BA40FECC1940530000C1F6BB /* VkNoticationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VkNoticationTests-Info.plist"; sourceTree = "<group>"; };
+		BA40FECE1940530000C1F6BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA40FED01940530000C1F6BB /* VkNoticationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VkNoticationTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA40FEA01940530000C1F6BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA40FEA71940530000C1F6BB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA40FEC11940530000C1F6BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA40FEC71940530000C1F6BB /* Cocoa.framework in Frameworks */,
+				BA40FEC61940530000C1F6BB /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA40FE9A1940530000C1F6BB = {
+			isa = PBXGroup;
+			children = (
+				BA40FEAC1940530000C1F6BB /* VkNotication */,
+				BA40FECA1940530000C1F6BB /* VkNoticationTests */,
+				BA40FEA51940530000C1F6BB /* Frameworks */,
+				BA40FEA41940530000C1F6BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA40FEA41940530000C1F6BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA40FEA31940530000C1F6BB /* VkNotication.app */,
+				BA40FEC41940530000C1F6BB /* VkNoticationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA40FEA51940530000C1F6BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA40FEA61940530000C1F6BB /* Cocoa.framework */,
+				BA40FEC51940530000C1F6BB /* XCTest.framework */,
+				BA40FEA81940530000C1F6BB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA40FEA81940530000C1F6BB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA40FEA91940530000C1F6BB /* AppKit.framework */,
+				BA40FEAA1940530000C1F6BB /* CoreData.framework */,
+				BA40FEAB1940530000C1F6BB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BA40FEAC1940530000C1F6BB /* VkNotication */ = {
+			isa = PBXGroup;
+			children = (
+				BA40FEB81940530000C1F6BB /* VKNAppDelegate.h */,
+				BA40FEB91940530000C1F6BB /* VKNAppDelegate.m */,
+				BA40FEBB1940530000C1F6BB /* MainMenu.xib */,
+				BA40FEBE1940530000C1F6BB /* Images.xcassets */,
+				BA40FEAD1940530000C1F6BB /* Supporting Files */,
+			);
+			path = VkNotication;
+			sourceTree = "<group>";
+		};
+		BA40FEAD1940530000C1F6BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA40FEAE1940530000C1F6BB /* VkNotication-Info.plist */,
+				BA40FEAF1940530000C1F6BB /* InfoPlist.strings */,
+				BA40FEB21940530000C1F6BB /* main.m */,
+				BA40FEB41940530000C1F6BB /* VkNotication-Prefix.pch */,
+				BA40FEB51940530000C1F6BB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA40FECA1940530000C1F6BB /* VkNoticationTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA40FED01940530000C1F6BB /* VkNoticationTests.m */,
+				BA40FECB1940530000C1F6BB /* Supporting Files */,
+			);
+			path = VkNoticationTests;
+			sourceTree = "<group>";
+		};
+		BA40FECB1940530000C1F6BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA40FECC1940530000C1F6BB /* VkNoticationTests-Info.plist */,
+				BA40FECD1940530000C1F6BB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA40FEA21940530000C1F6BB /* VkNotication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA40FED41940530000C1F6BB /* Build configuration list for PBXNativeTarget "VkNotication" */;
+			buildPhases = (
+				BA40FE9F1940530000C1F6BB /* Sources */,
+				BA40FEA01940530000C1F6BB /* Frameworks */,
+				BA40FEA11940530000C1F6BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VkNotication;
+			productName = VkNotication;
+			productReference = BA40FEA31940530000C1F6BB /* VkNotication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA40FEC31940530000C1F6BB /* VkNoticationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA40FED71940530000C1F6BB /* Build configuration list for PBXNativeTarget "VkNoticationTests" */;
+			buildPhases = (
+				BA40FEC01940530000C1F6BB /* Sources */,
+				BA40FEC11940530000C1F6BB /* Frameworks */,
+				BA40FEC21940530000C1F6BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA40FEC91940530000C1F6BB /* PBXTargetDependency */,
+			);
+			name = VkNoticationTests;
+			productName = VkNoticationTests;
+			productReference = BA40FEC41940530000C1F6BB /* VkNoticationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA40FE9B1940530000C1F6BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VKN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Lobster;
+				TargetAttributes = {
+					BA40FEC31940530000C1F6BB = {
+						TestTargetID = BA40FEA21940530000C1F6BB;
+					};
+				};
+			};
+			buildConfigurationList = BA40FE9E1940530000C1F6BB /* Build configuration list for PBXProject "VkNotication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA40FE9A1940530000C1F6BB;
+			productRefGroup = BA40FEA41940530000C1F6BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA40FEA21940530000C1F6BB /* VkNotication */,
+				BA40FEC31940530000C1F6BB /* VkNoticationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA40FEA11940530000C1F6BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA40FEB11940530000C1F6BB /* InfoPlist.strings in Resources */,
+				BA40FEBF1940530000C1F6BB /* Images.xcassets in Resources */,
+				BA40FEB71940530000C1F6BB /* Credits.rtf in Resources */,
+				BA40FEBD1940530000C1F6BB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA40FEC21940530000C1F6BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA40FECF1940530000C1F6BB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA40FE9F1940530000C1F6BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA40FEBA1940530000C1F6BB /* VKNAppDelegate.m in Sources */,
+				BA40FEB31940530000C1F6BB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA40FEC01940530000C1F6BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA40FED11940530000C1F6BB /* VkNoticationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA40FEC91940530000C1F6BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA40FEA21940530000C1F6BB /* VkNotication */;
+			targetProxy = BA40FEC81940530000C1F6BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA40FEAF1940530000C1F6BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA40FEB01940530000C1F6BB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BA40FEB51940530000C1F6BB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA40FEB61940530000C1F6BB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BA40FEBB1940530000C1F6BB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA40FEBC1940530000C1F6BB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BA40FECD1940530000C1F6BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA40FECE1940530000C1F6BB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA40FED21940530000C1F6BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BA40FED31940530000C1F6BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BA40FED51940530000C1F6BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkNotication/VkNotication-Prefix.pch";
+				INFOPLIST_FILE = "VkNotication/VkNotication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BA40FED61940530000C1F6BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkNotication/VkNotication-Prefix.pch";
+				INFOPLIST_FILE = "VkNotication/VkNotication-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BA40FED81940530000C1F6BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VkNotication.app/Contents/MacOS/VkNotication";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkNotication/VkNotication-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VkNoticationTests/VkNoticationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BA40FED91940530000C1F6BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VkNotication.app/Contents/MacOS/VkNotication";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkNotication/VkNotication-Prefix.pch";
+				INFOPLIST_FILE = "VkNoticationTests/VkNoticationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA40FE9E1940530000C1F6BB /* Build configuration list for PBXProject "VkNotication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA40FED21940530000C1F6BB /* Debug */,
+				BA40FED31940530000C1F6BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA40FED41940530000C1F6BB /* Build configuration list for PBXNativeTarget "VkNotication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA40FED51940530000C1F6BB /* Debug */,
+				BA40FED61940530000C1F6BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA40FED71940530000C1F6BB /* Build configuration list for PBXNativeTarget "VkNoticationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA40FED81940530000C1F6BB /* Debug */,
+				BA40FED91940530000C1F6BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA40FE9B1940530000C1F6BB /* Project object */;
+}
