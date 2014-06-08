@@ -10,4 +10,13 @@
 
 @implementation VKAuthView
 
+- (void)webView:(WebView *)webView didFinishLoadForFrame:(WebFrame *)webFrame {
+    NSString *currentURL = [[[[webFrame dataSource] request] URL] absoluteString];
+    NSLog(@"didFinishLoadForFrame: %@",currentURL);
+}
+
+- (BOOL)canDrawSubviewsIntoLayer{
+    return NO;
+}
+
 @end

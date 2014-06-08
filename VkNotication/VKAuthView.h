@@ -7,7 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <WebKit/WebKit.h>
 
-@interface VKAuthView : WebView
+@interface VKAuthView : WebView {
+}
+- (BOOL)canDrawSubviewsIntoLayer;
+- (void)webView:(WebView *)webView didFinishLoadForFrame:(WebFrame *)webFrame;
 
 @end

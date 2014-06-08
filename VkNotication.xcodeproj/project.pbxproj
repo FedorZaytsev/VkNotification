@@ -18,6 +18,9 @@
 		BA40FEC71940530000C1F6BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA40FEA61940530000C1F6BB /* Cocoa.framework */; };
 		BA40FECF1940530000C1F6BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA40FECD1940530000C1F6BB /* InfoPlist.strings */; };
 		BA40FED11940530000C1F6BB /* VkNoticationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40FED01940530000C1F6BB /* VkNoticationTests.m */; };
+		BA40FEE11940569700C1F6BB /* VKAuthView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40FEE01940569700C1F6BB /* VKAuthView.m */; };
+		BAD323B119424E430034ABCE /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD323B019424E430034ABCE /* ServiceManagement.framework */; };
+		BAD323B51942FC250034ABCE /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = BAD323B41942FC250034ABCE /* icon.iconset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,11 @@
 		BA40FECC1940530000C1F6BB /* VkNoticationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VkNoticationTests-Info.plist"; sourceTree = "<group>"; };
 		BA40FECE1940530000C1F6BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA40FED01940530000C1F6BB /* VkNoticationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VkNoticationTests.m; sourceTree = "<group>"; };
+		BA40FEDF1940569700C1F6BB /* VKAuthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAuthView.h; sourceTree = "<group>"; };
+		BA40FEE01940569700C1F6BB /* VKAuthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAuthView.m; sourceTree = "<group>"; };
+		BAD323AF19424DFD0034ABCE /* VkNotication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VkNotication.entitlements; sourceTree = "<group>"; };
+		BAD323B019424E430034ABCE /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		BAD323B41942FC250034ABCE /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD323B119424E430034ABCE /* ServiceManagement.framework in Frameworks */,
 				BA40FEA71940530000C1F6BB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +104,7 @@
 		BA40FEA51940530000C1F6BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAD323B019424E430034ABCE /* ServiceManagement.framework */,
 				BA40FEA61940530000C1F6BB /* Cocoa.framework */,
 				BA40FEC51940530000C1F6BB /* XCTest.framework */,
 				BA40FEA81940530000C1F6BB /* Other Frameworks */,
@@ -115,11 +125,15 @@
 		BA40FEAC1940530000C1F6BB /* VkNotication */ = {
 			isa = PBXGroup;
 			children = (
+				BAD323B41942FC250034ABCE /* icon.iconset */,
+				BAD323AF19424DFD0034ABCE /* VkNotication.entitlements */,
 				BA40FEB81940530000C1F6BB /* VKNAppDelegate.h */,
 				BA40FEB91940530000C1F6BB /* VKNAppDelegate.m */,
 				BA40FEBB1940530000C1F6BB /* MainMenu.xib */,
 				BA40FEBE1940530000C1F6BB /* Images.xcassets */,
 				BA40FEAD1940530000C1F6BB /* Supporting Files */,
+				BA40FEDF1940569700C1F6BB /* VKAuthView.h */,
+				BA40FEE01940569700C1F6BB /* VKAuthView.m */,
 			);
 			path = VkNotication;
 			sourceTree = "<group>";
@@ -202,6 +216,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Lobster;
 				TargetAttributes = {
+					BA40FEA21940530000C1F6BB = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
 					BA40FEC31940530000C1F6BB = {
 						TestTargetID = BA40FEA21940530000C1F6BB;
 					};
@@ -233,6 +254,7 @@
 			files = (
 				BA40FEB11940530000C1F6BB /* InfoPlist.strings in Resources */,
 				BA40FEBF1940530000C1F6BB /* Images.xcassets in Resources */,
+				BAD323B51942FC250034ABCE /* icon.iconset in Resources */,
 				BA40FEB71940530000C1F6BB /* Credits.rtf in Resources */,
 				BA40FEBD1940530000C1F6BB /* MainMenu.xib in Resources */,
 			);
@@ -255,6 +277,7 @@
 			files = (
 				BA40FEBA1940530000C1F6BB /* VKNAppDelegate.m in Sources */,
 				BA40FEB31940530000C1F6BB /* main.m in Sources */,
+				BA40FEE11940569700C1F6BB /* VKAuthView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,10 +409,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VkNotication/VkNotication.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VkNotication/VkNotication-Prefix.pch";
 				INFOPLIST_FILE = "VkNotication/VkNotication-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -399,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VkNotication/VkNotication.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VkNotication/VkNotication-Prefix.pch";
 				INFOPLIST_FILE = "VkNotication/VkNotication-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -467,6 +495,7 @@
 				BA40FED61940530000C1F6BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA40FED71940530000C1F6BB /* Build configuration list for PBXNativeTarget "VkNoticationTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +504,7 @@
 				BA40FED91940530000C1F6BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
